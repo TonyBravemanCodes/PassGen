@@ -26,13 +26,13 @@ def writePassgen():
     while '' in chekbox_list:
         chekbox_list.remove('')
     if not chekbox_list:
-        mb.showerror(title="Внимание!", message="Ни один набор символов не выбран")
+        mb.showerror(title="Внимание!", message="Ни один набор символов не выбран.")
         return
     outputField.insert(INSERT, passgen(int(inputField.get()), chekbox_list))
     outputField['state'] = "disabled"
     window.clipboard_clear()  # Очистить буфер обмена
     window.clipboard_append(outputField.get())  # Занести сгенеренный пароль в буфер обмена
-    label4.config(text="Пароль скопирован в буфер обмена")
+    label4.config(text="Пароль скопирован в буфер обмена.")
 
 
 window = Tk()
@@ -58,11 +58,11 @@ enabled4 = StringVar()
 inputChk1 = Checkbutton(window, text='Цифры', onvalue='013456789', offvalue='', variable=enabled1)
 inputChk1.place(x=20, y=70)
 inputChk1.select()
-inputChk2 = Checkbutton(window, text='Латиница нижний регист', onvalue='abcdefghijklmnopqrstuvwxyz', offvalue='',
+inputChk2 = Checkbutton(window, text='Латиница, нижний регист', onvalue='abcdefghijklmnopqrstuvwxyz', offvalue='',
                         variable=enabled2)
 inputChk2.place(x=20, y=90)
 inputChk2.select()
-inputChk3 = Checkbutton(window, text='Латиница верхний регист', onvalue='ABCDEFGHIJKLMNOPQRSTUVWXYZ', offvalue='',
+inputChk3 = Checkbutton(window, text='Латиница, верхний регист', onvalue='ABCDEFGHIJKLMNOPQRSTUVWXYZ', offvalue='',
                         variable=enabled3)
 inputChk3.place(x=20, y=110)
 inputChk3.select()
