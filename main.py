@@ -55,7 +55,7 @@ enabled1 = StringVar()
 enabled2 = StringVar()
 enabled3 = StringVar()
 enabled4 = StringVar()
-inputChk1 = Checkbutton(window, text='Цифры', onvalue='013456789', offvalue='', variable=enabled1)
+inputChk1 = Checkbutton(window, text='Цифры', onvalue='0123456789', offvalue='', variable=enabled1)
 inputChk1.place(x=20, y=70)
 inputChk1.select()
 inputChk2 = Checkbutton(window, text='Латиница, нижний регист', onvalue='abcdefghijklmnopqrstuvwxyz', offvalue='',
