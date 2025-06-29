@@ -1,6 +1,4 @@
 import random
-from tkinter import *
-from tkinter import messagebox as mb
 
 
 def passgen(passlength, symbol_sets=[]):
@@ -35,7 +33,7 @@ def writePassgen():
     label4.config(text="Пароль скопирован в буфер обмена.")
 
 
-window = Tk()
+'''window = Tk()
 window.geometry('310x250')
 window.resizable(width=False, height=False)
 window.title("Генератор паролей")
@@ -80,3 +78,4 @@ btn1 = Button(window, text="Сгенерировать", command=writePassgen, f
 btn1.place(x=200, y=180)
 
 window.mainloop()
+'''
