@@ -1,5 +1,5 @@
 import random
-import PyQT
+import PyQT #исправь ссыль
 
 def passgen(passlength, symbol_sets=[]):
     '''
