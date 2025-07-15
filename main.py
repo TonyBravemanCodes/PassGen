@@ -38,7 +38,7 @@ def writePassgen():
 window = Tk()
 window.geometry('320x260')
 window.resizable(width=False, height=False) # Запрещаем менять размеры окна
-window.title("Генератор паролей")
+window.title("Генератор паролей (Oldschool_GUI)")
 
 label1 = Label(window, text="Длина пароля:", font="Arial 11 bold")
 label1.place(x=5, y=10)
